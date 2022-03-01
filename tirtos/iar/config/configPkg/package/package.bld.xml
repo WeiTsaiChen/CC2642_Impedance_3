@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="x-windows-950"?>
+<!--  This file conforms to the DTD xdc/bld/build.dtd -->
+<package name="configPkg" version="" producerId="undefined">
+    <units>
+    </units>
+    <sources>
+        <srcFile name="package/cfg/ble_release_prm4f.c"/>
+    </sources>
+    <configscripts>
+        <srcFile name="C:/ti/simplelink_cc13x2_26x2_sdk_2_40_00_81/examples/rtos/CC26X2R1_LAUNCHXL/ble5stack/CC2642_Impedance_3/tirtos/ble_release.cfg"/>
+    </configscripts>
+    <makefiles>
+        <srcFile name="package.mak" src="package.bld"/>
+        <srcFile name="package/package.xdc.dep" src="package.xdc"/>
+        <srcFile name="package/cfg/ble_release_prm4f.mak" src="package.bld"/>
+        <srcFile name="package/cfg/ble_release_prm4f.orm4f.dep" src="package/cfg/ble_release_prm4f.c"/>
+        <srcFile name="package/cfg/ble_release_prm4f.dep" src="package/cfg/ble_release_prm4f.cfg"/>
+        <srcFile name="package/cfg/ble_release.xrm4f.mak" src="package.bld"/>
+        <srcFile name="package/rel/configPkg.tar.dep" src="package/rel/configPkg.xdc.inc"/>
+    </makefiles>
+    <targets>
+        <target name="iar.targets.arm.M4F"
+            version="iar.targets.arm.M4F{1,0,8.20,2"
+            rawVersion="8.20.2.14835"
+            platform="ti.platforms.tiva:TM4C1294NCPDT:1"
+            isa="v7M4"
+            suffix="rm4f"
+            rootDir="C:/PROGRA~2/IARSYS~1/EMBEDD~1.0/arm"
+            os="undefined"
+            rts="iar.targets.arm.rts">
+            <model endian="little"
+                codeModel="thumb2"
+                dataModel="undefined"/>
+        </target>
+    </targets>
+    <libraries>
+    </libraries>
+    <configurations>
+    <configuration name="ble_release"
+        pname="ble_release.prm4f"
+        target="iar.targets.arm.M4F"
+        platform="ti.platforms.simplelink:CC2642R1F"
+        profile="release"
+        isPartial="false"
+        xCfgScript="package/cfg/ble_release_prm4f.cfg"
+        xCfgPrefix="package/cfg/ble_release_prm4f"
+        cfgScript="C:/ti/simplelink_cc13x2_26x2_sdk_2_40_00_81/examples/rtos/CC26X2R1_LAUNCHXL/ble5stack/CC2642_Impedance_3/tirtos/ble_release.cfg"
+        cfgArgs="null"
+        />
+    </configurations>
+    <executables>
+    <executable name="ble_release"
+        pname="ble_release.xrm4f"
+        target="iar.targets.arm.M4F"
+        platform="ti.platforms.simplelink:CC2642R1F"
+        profile="release"
+        xCfgScript="package/cfg/ble_release_prm4f.cfg"
+        xCfgPrefix="package/cfg/ble_release_prm4f"
+        cfgScript="C:/ti/simplelink_cc13x2_26x2_sdk_2_40_00_81/examples/rtos/CC26X2R1_LAUNCHXL/ble5stack/CC2642_Impedance_3/tirtos/ble_release.cfg"
+        cfgArgs="null"
+        />
+    </executables>
+    <tests>
+    <test exeName="ble_release.xrm4f"
+        args=""
+        groupName="ble_release.xrm4f"
+        refOutput="undefined"
+        refExitCode="0"
+        execArgs=""
+        />
+    </tests>
+    <releases relDir="package/rel/">
+    <release name="configPkg"
+        pname="configPkg.tar"
+        label="default"
+    >
+        <file name="package/package.bld.xml"/>
+        <file name="package/build.cfg"/>
+        <file name="package/package.xdc.inc"/>
+    </release>
+    </releases>
+    <repositories>
+    </repositories>
+</package>

@@ -1,0 +1,14 @@
+ccfg_app_ble.pbi: \
+  C:\ti\simplelink_cc13x2_26x2_sdk_2_40_00_81\examples\rtos\CC26X2R1_LAUNCHXL\ble5stack\simple_peripheral\src\ccfg_app_ble.c \
+  C:\ti\simplelink_cc13x2_26x2_sdk_2_40_00_81\examples\rtos\CC26X2R1_LAUNCHXL\ble5stack\simple_peripheral\tirtos\iar\app\..\..\..\..\..\..\..\..\source\ti\devices\cc13x2_cc26x2\startup_files/ccfg.c \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\stdint.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\ycheck.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\yvals.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\DLib_Defaults.h \
+  C:\\Program\ Files\ (x86)\\IAR\ Systems\\Embedded\ Workbench\ 8.3\\arm\\inc\\c\\DLib_Config_Normal.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\DLib_Product.h \
+  C:\ti\simplelink_cc13x2_26x2_sdk_2_40_00_81\examples\rtos\CC26X2R1_LAUNCHXL\ble5stack\simple_peripheral\tirtos\iar\app\..\..\..\..\..\..\..\..\source\ti\devices\cc13x2_cc26x2\startup_files/../inc/hw_types.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\stdbool.h \
+  C:\ti\simplelink_cc13x2_26x2_sdk_2_40_00_81\examples\rtos\CC26X2R1_LAUNCHXL\ble5stack\simple_peripheral\tirtos\iar\app\..\..\..\..\..\..\..\..\source\ti\devices\cc13x2_cc26x2\startup_files/../inc/../inc/hw_chip_def.h \
+  C:\ti\simplelink_cc13x2_26x2_sdk_2_40_00_81\examples\rtos\CC26X2R1_LAUNCHXL\ble5stack\simple_peripheral\tirtos\iar\app\..\..\..\..\..\..\..\..\source\ti\devices\cc13x2_cc26x2\startup_files/../inc/hw_ccfg.h \
+  C:\ti\simplelink_cc13x2_26x2_sdk_2_40_00_81\examples\rtos\CC26X2R1_LAUNCHXL\ble5stack\simple_peripheral\tirtos\iar\app\..\..\..\..\..\..\..\..\source\ti\devices\cc13x2_cc26x2\startup_files/../inc/hw_ccfg_simple_struct.h

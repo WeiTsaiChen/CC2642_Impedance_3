@@ -1,0 +1,12 @@
+IAR_PATH="C:\Program Files (x86)\IAR Systems\EWARM-8.20.2\common\bin\IarBuild.exe"
+EWP_PATH="C:\.conan\dktn8lls\1\examples\rtos\CC26X2R1_LAUNCHXL\ble5stack\simple_peripheral\tirtos\iar\stack\cc26x2r1lp_stack.ewp"
+VARFILE="C:\.conan\dktn8lls\1\examples\rtos\CC26X2R1_LAUNCHXL\ble5stack\simple_peripheral\tirtos\iar\ble5_simple_peripheral.custom_argvars"
+PARALLEL=64
+
+all: clean FlashROM_Library
+
+FlashROM_Library:
+	$(IAR_PATH) $(EWP_PATH) -build FlashROM_Library -log all -parallel $(PARALLEL) -varfile $(VARFILE)
+
+clean:
+	$(IAR_PATH) $(EWP_PATH) -clean FlashROM_Library -log all -parallel $(PARALLEL) -varfile $(VARFILE)

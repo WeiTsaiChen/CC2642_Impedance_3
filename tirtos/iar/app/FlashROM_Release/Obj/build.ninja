@@ -1,0 +1,51 @@
+#Generating source browse information for project cc26x2r1lp_app
+
+
+#Abbreviations
+cc = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\SourceIndexer.exe
+ll = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\PbdLink.exe
+bd = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\makeBrowseData.exe
+
+
+
+#Rules
+rule index
+  depfile = $out.dep
+  command = $cc -out=$out -f $in
+rule link
+  command = $ll -M $out $in
+rule browsedata
+  command = $bd $in -output  $out
+
+
+
+#Build steps
+build board_key.pbi : index board_key.xcl
+build simple_peripheral.pbi : index simple_peripheral.xcl
+build simple_peripheral_menu.pbi : index simple_peripheral_menu.xcl
+build two_btn_menu.pbi : index two_btn_menu.xcl
+build util.pbi : index util.xcl
+build crc.pbi : index crc.xcl
+build nvoctp.pbi : index nvoctp.xcl
+build TRNGCC26XX.pbi : index TRNGCC26XX.xcl
+build icall.pbi : index icall.xcl
+build icall_cc2650.pbi : index icall_cc2650.xcl
+build icall_user_config.pbi : index icall_user_config.xcl
+build ble_user_config.pbi : index ble_user_config.xcl
+build icall_api_lite.pbi : index icall_api_lite.xcl
+build devinfoservice.pbi : index devinfoservice.xcl
+build gatt_uuid.pbi : index gatt_uuid.xcl
+build gattservapp_util.pbi : index gattservapp_util.xcl
+build simple_gatt_profile.pbi : index simple_gatt_profile.xcl
+build board.pbi : index board.xcl
+build ccfg_app_ble.pbi : index ccfg_app_ble.xcl
+build main.pbi : index main.xcl
+build cc26x2r1lp_app_part0.pbi : link board_key.pbi simple_peripheral.pbi simple_peripheral_menu.pbi two_btn_menu.pbi
+build cc26x2r1lp_app_part1.pbi : link util.pbi crc.pbi nvoctp.pbi TRNGCC26XX.pbi
+build cc26x2r1lp_app_part2.pbi : link icall.pbi icall_cc2650.pbi icall_user_config.pbi ble_user_config.pbi
+build cc26x2r1lp_app_part3.pbi : link icall_api_lite.pbi devinfoservice.pbi gatt_uuid.pbi gattservapp_util.pbi
+build cc26x2r1lp_app_part4.pbi : link simple_gatt_profile.pbi board.pbi ccfg_app_ble.pbi main.pbi
+build cc26x2r1lp_app.pbd : link cc26x2r1lp_app_part0.pbi cc26x2r1lp_app_part1.pbi cc26x2r1lp_app_part2.pbi cc26x2r1lp_app_part3.pbi cc26x2r1lp_app_part4.pbi
+build cc26x2r1lp_app.pbw : browsedata cc26x2r1lp_app.pbd
+
+

@@ -1,0 +1,17 @@
+two_btn_menu.pbi: \
+  C:\ti\simplelink_cc13x2_26x2_sdk_2_40_00_81\source\ti\ble5stack\common\cc26xx\menu\two_btn_menu.c \
+  C:/ti/simplelink_cc13x2_26x2_sdk_2_40_00_81/source\ti/display/Display.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\stdint.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\ycheck.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\yvals.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\DLib_Defaults.h \
+  C:\\Program\ Files\ (x86)\\IAR\ Systems\\Embedded\ Workbench\ 8.3\\arm\\inc\\c\\DLib_Config_Normal.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\DLib_Product.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\stdarg.h \
+  C:\ti\simplelink_cc13x2_26x2_sdk_2_40_00_81\examples\rtos\CC26X2R1_LAUNCHXL\ble5stack\simple_peripheral\tirtos\iar\app\..\..\..\..\..\..\..\..\source\ti\ble5stack\inc\bcomdef.h \
+  C:\ti\simplelink_cc13x2_26x2_sdk_2_40_00_81\examples\rtos\CC26X2R1_LAUNCHXL\ble5stack\simple_peripheral\tirtos\iar\app\..\..\..\..\..\..\..\..\source\ti\ble5stack\osal\src\inc\comdef.h \
+  C:\ti\simplelink_cc13x2_26x2_sdk_2_40_00_81\examples\rtos\CC26X2R1_LAUNCHXL\ble5stack\simple_peripheral\tirtos\iar\app\..\..\..\..\..\..\..\..\source\ti\ble5stack\hal\src\target\_common\hal_types.h \
+  C:\ti\simplelink_cc13x2_26x2_sdk_2_40_00_81\examples\rtos\CC26X2R1_LAUNCHXL\ble5stack\simple_peripheral\tirtos\iar\app\..\..\..\..\..\..\..\..\source\ti\ble5stack\hal\src\target\_common/../_common/cc26xx/_hal_types.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\stdbool.h \
+  C:\ti\simplelink_cc13x2_26x2_sdk_2_40_00_81\examples\rtos\CC26X2R1_LAUNCHXL\ble5stack\simple_peripheral\tirtos\iar\app\..\..\..\..\..\..\..\..\source\ti\ble5stack\hal\src\inc\hal_defs.h \
+  C:\ti\simplelink_cc13x2_26x2_sdk_2_40_00_81\source\ti\ble5stack\common\cc26xx\menu/two_btn_menu.h

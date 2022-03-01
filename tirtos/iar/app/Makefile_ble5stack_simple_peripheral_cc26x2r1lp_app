@@ -1,0 +1,24 @@
+IAR_PATH="C:\Program Files (x86)\IAR Systems\EWARM-8.20.2\common\bin\IarBuild.exe"
+EWP_PATH="C:\.conan\dktn8lls\1\examples\rtos\CC26X2R1_LAUNCHXL\ble5stack\simple_peripheral\tirtos\iar\app\cc26x2r1lp_app.ewp"
+VARFILE="C:\.conan\dktn8lls\1\examples\rtos\CC26X2R1_LAUNCHXL\ble5stack\simple_peripheral\tirtos\iar\ble5_simple_peripheral.custom_argvars"
+PARALLEL=64
+
+all: clean FlashROM_Release FlashROM_PTM_Release FlashROM_Debug FlashROM_RCOSC_Release
+
+FlashROM_Release:
+	$(IAR_PATH) $(EWP_PATH) -build FlashROM_Release -log all -parallel $(PARALLEL) -varfile $(VARFILE)
+
+FlashROM_PTM_Release:
+	$(IAR_PATH) $(EWP_PATH) -build FlashROM_PTM_Release -log all -parallel $(PARALLEL) -varfile $(VARFILE)
+
+FlashROM_Debug:
+	$(IAR_PATH) $(EWP_PATH) -build FlashROM_Debug -log all -parallel $(PARALLEL) -varfile $(VARFILE)
+
+FlashROM_RCOSC_Release:
+	$(IAR_PATH) $(EWP_PATH) -build FlashROM_RCOSC_Release -log all -parallel $(PARALLEL) -varfile $(VARFILE)
+
+clean:
+	$(IAR_PATH) $(EWP_PATH) -clean FlashROM_Release -log all -parallel $(PARALLEL) -varfile $(VARFILE)
+	$(IAR_PATH) $(EWP_PATH) -clean FlashROM_PTM_Release -log all -parallel $(PARALLEL) -varfile $(VARFILE)
+	$(IAR_PATH) $(EWP_PATH) -clean FlashROM_Debug -log all -parallel $(PARALLEL) -varfile $(VARFILE)
+	$(IAR_PATH) $(EWP_PATH) -clean FlashROM_RCOSC_Release -log all -parallel $(PARALLEL) -varfile $(VARFILE)
